@@ -1,7 +1,10 @@
 import { useCallback, useEffect, useMemo } from 'react';
 
+import { homepage } from '../config';
+
 import { TGameData } from '../types';
 import zipData from '../utils/zipData';
+
 import useForceUpdate from './useForceUpdate';
 
 type TSetGameData = (gameData: TGameData) => void;
@@ -104,7 +107,7 @@ const useGameData: TUse = () => {
 
         const search = `#?key=${key}&mode=${mode}&width=${width}&height=${height}&grain=${grain}&grid=${grid}&data=${dataZip}`;
 
-        const locationHref = window.location.origin + search;
+        const locationHref = `${window.location.origin}${homepage}/${search}`;
 
         window.location.href = locationHref;
     }, []);

@@ -5,6 +5,7 @@ import { TGameData } from '../../types';
 import tpls from './tpls';
 
 import './style.css';
+import { homepage } from '../../config';
 
 type TProps = {
     data: TGameData;
@@ -33,7 +34,7 @@ const Header = (props: TProps) => {
                 {'key' === key ? (
                     <span className='header__name'>Начало</span>
                 ) : (
-                    <a className='header__link' href='/game-of-life/#'>Начало</a>
+                    <a className='header__link' href={`${homepage}/#`} >Начало</a>
                 )}
 
                 {tpls.map((tpl) => {
@@ -51,7 +52,7 @@ const Header = (props: TProps) => {
                         <a
                             className='header__link'
                             key={tpl.name}
-                            href={tpl.hash}
+                            href={`${homepage}/${tpl.hash}`}
                         >
                             {tpl.name}
                         </a>

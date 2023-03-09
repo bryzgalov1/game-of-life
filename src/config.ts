@@ -1,3 +1,5 @@
+export const homepage = '/game-of-life';
+
 export const COLOR_SHOW = '#000000';
 export const COLOR_HIDE = '#FFD080';
 
