@@ -20,12 +20,22 @@ const Header = (props: TProps) => {
         <header className='header'>
 
             <h1 className='header__h1'>
-                Игра «Жизнь» {' '}
+                <span>Игра «Жизнь»</span>
+
                 <a
                     href="https://ru.wikipedia.org/wiki/%D0%98%D0%B3%D1%80%D0%B0_%C2%AB%D0%96%D0%B8%D0%B7%D0%BD%D1%8C%C2%BB"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                >
                     wikipedia
+                </a>
+
+                <a
+                    href="https://github.com/bryzgalov1/game-of-life"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    github
                 </a>
             </h1>
 

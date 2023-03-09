@@ -9,6 +9,12 @@
     font-size: 20px;
     padding: 0;
     margin: 0 0 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .header__h1 a {
