@@ -33,7 +33,7 @@ const Header = (props: TProps) => {
                 {'key' === key ? (
                     <span className='header__name'>Начало</span>
                 ) : (
-                    <a className='header__link' href='/#'>Начало</a>
+                    <a className='header__link' href='/game-of-life/#'>Начало</a>
                 )}
 
                 {tpls.map((tpl) => {
