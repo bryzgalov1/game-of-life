@@ -1,0 +1,12 @@
+.Canvas {
+    overflow: auto;
+}
+
+.Canvas__body {
+    margin: 0 auto;
+    background: #fffadf;
+}
+
+.Canvas__element {
+    display: block;
+}
